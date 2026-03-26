@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+/* nav */
 
 .main-header {
     height: 10vh;
@@ -69,7 +70,9 @@ body {
 .top-nav .nav-links li a.active {
     color: var(--gold-accent);
 }
+/* nav end */
 
+/* home page */
 .pages {
     margin-top: var(--nav-height);
     flex: 1;
@@ -190,25 +193,22 @@ body {
     color: var(--text-color);
 }
 
-/* ОБНОВЛЕНИЙ ВІЗУАЛЬНИЙ СТЕК (ЄДИНА КАРТИНКА) */
 .homePage .visual-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 400px; /* Висота контейнера */
+    height: 400px;
 }
 
 .homePage .hero-full-img {
     max-width: 100%;
     height: auto;
-    /* Додаємо світіння суто кодом */
     filter: drop-shadow(0 0 15px var(--blue-glow));
     transition: transform 0.3s ease;
 }
 
-/* Ефект світіння на фоні карти в самій картинці */
 .homePage .visual-wrapper::before {
     content: '';
     position: absolute;
@@ -219,8 +219,8 @@ body {
     height: 120%;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 0 0 100px var(--blue-glow); /* Ще більше світіння на фоні */
-    opacity: 0.1; /* Дуже тонко */
+    box-shadow: 0 0 100px var(--blue-glow); 
+    opacity: 0.1; 
     z-index: 1;
 }
 
@@ -268,3 +268,7 @@ body {
     .homePage .visual-wrapper { width: 100%; height: auto;}
     .homePage .bottom-footer { position: static; margin-top: 40px; text-align: center; }
 }
+
+/* home page end */
+
+
