@@ -5,6 +5,7 @@
     --gold-accent: #E8D1B6;
     --blue-glow: rgba(0, 191, 255, 0.5);
     --nav-bg: #0A0A0A;
+    --button-bg: #bb4d36;
     --page-height: 90vh;
     --font-main: 'Open Sans', sans-serif;
 }
@@ -387,4 +388,88 @@ body {
 }
 
 /* About us end */
+
+/* contacts page start */
+
+
+
+.ContactPage {
+    padding-top: 10vh;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ContactPageForm {
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ContactPageInputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.ContactPageInputContainer input {
+    min-height: 40px;
+    border-radius: 10px;
+    margin: 7px 0;
+    font-size: 20px;
+
+}
+
+.horizontalContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ContactPageForm button {
+    width: 25%;
+    min-height: 35px;
+    border: none;
+    border-radius: 27px;
+    background-color: var(--button-bg);
+    color: #fff;
+    font-size: 15px;
+    
+}
+
+.ContactPageMessage {
+    height: 30%;
+    resize: none;
+    width: 100%;
+    margin: 7px 0;
+    border-radius: 10px;
+    min-height: 100px;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .googleMap {width: 300px; height: 400px;}
+}
+
+@media (max-width: 990px) {
+   
+    .ContactPageInputContainer {width: 100%;}
+}
+@media (max-width: 768px) {
+    .ContactPage {padding-top: 0;}
+    
+}
+
+@media (max-width: 850px) {
+    .map {display: none;}
+    .ContactPageForm button {width: 50%;}
+    .ContactPageForm {width: 90%; align-items: center; padding-bottom: 100px;}
+    
+    
+}
+
 
