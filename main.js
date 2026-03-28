@@ -1,9 +1,7 @@
 $(document).ready(function() {
-    // Приховуємо всі сторінки, крім Home
     $('.aboutUsPage, .itemsPage, .ContactPage, .supportPage').hide();
     $('.homePage').css('display', 'flex');
     
-    // Клік на Home
     $('.top-nav .nav-links li a').eq(0).click(function(e) {
         e.preventDefault();
         $('.aboutUsPage, .itemsPage, .ContactPage, .supportPage').hide();
