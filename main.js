@@ -12,7 +12,6 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     
-    // Клік на About us
     $('.top-nav .nav-links li a').eq(1).click(function(e) {
         e.preventDefault();
         $('.homePage, .itemsPage, .ContactPage, .supportPage').hide();
@@ -21,7 +20,6 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     
-    // Клік на Items
     $('.top-nav .nav-links li a').eq(2).click(function(e) {
         e.preventDefault();
         $('.homePage, .aboutUsPage, .ContactPage, .supportPage').hide();
@@ -30,7 +28,6 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
     
-    // Клік на Contact
     $('.top-nav .nav-links li a').eq(3).click(function(e) {
         e.preventDefault();
         $('.homePage, .aboutUsPage, .itemsPage, .supportPage').hide();
@@ -38,8 +35,6 @@ $(document).ready(function() {
         $('.top-nav .nav-links li a').removeClass('active');
         $(this).addClass('active');
     });
-    
-    // Клік на Support
     $('.top-nav .nav-links li a').eq(4).click(function(e) {
         e.preventDefault();
         $('.homePage, .aboutUsPage, .itemsPage, .ContactPage').hide();
