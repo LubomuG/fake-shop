@@ -133,3 +133,18 @@ $(`#continueShopping`).click(function(){
 $('.cart').on('click', '.removeCartItemBtn', function() {
   $(this).closest('.cartItem').remove();
 });
+
+
+
+
+
+
+
+
+
+const title = document.title;
+document.addEventListener("visabilitychange", () => {
+  document.title = document.hidden ?
+  "Come back :(" :
+   title;
+});
