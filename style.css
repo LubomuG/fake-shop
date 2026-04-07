@@ -560,3 +560,131 @@ body {
         display: none;
     }
 }
+
+
+
+
+
+/* Support Page Styles */
+.supportPage {
+    
+
+}
+
+.support-main-title {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.support-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.support-label {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #f1f5f9;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.contact-row i {
+    color: #b47b5f; 
+    font-size: 30px;
+    width: 25px;
+    margin: 20px;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: rgba(241, 245, 249, 0.2);
+    align-self: stretch;
+}
+
+.steps-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+}
+
+.icon-circle {
+    background-color: #b47b5f;
+    color: #0f172a;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.step-text {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.step-connector {
+    flex-grow: 1;
+    border-bottom: 1px dashed rgba(241, 245, 249, 0.4);
+    margin-bottom: 25px; /* Вирівнювання по центру іконок */
+}
+
+.guide-text {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.guide-text a {
+    color: #7bc0d4;
+    text-decoration: underline;
+}
+
+.guide-text a:hover {
+    color: #f1f5f9;
+}
+
+
+
+@media (max-width: 768px) {
+    .support-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vertical-divider {
+        display: none;
+    }
+    .support-column {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-row {
+        justify-content: center;
+    }
+    .steps-container {
+        justify-content: center;
+    }
+}
